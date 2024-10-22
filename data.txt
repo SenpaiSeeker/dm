@@ -1,1 +1,27 @@
-
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.483993276.1729602017", "/", ".triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_KEHG47V40V", "GS1.1.1729602016.1.1.1729602068.0.0.0", "/", ".triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("XSRF-TOKEN", "eyJpdiI6IkU4Uy81SjlscVAya2lRQXFvV04zcnc9PSIsInZhbHVlIjoiNDU5T09WaHUwWnVqNmtUUUF4NWE3aitPejMxOHUxL01EaFBiN05GaGtWRnNVb25QaXMzOXJ0UWZSVmRjZEpMeWY0UFVwZFZJS1didlRYVWp2cWVySXMydHM0a25ZYVhXL3d3ankvbnAyelV3NTE3MmxEdUZ2YkozV3FzRDVMOHgiLCJtYWMiOiJlOGUyYjcwNWY5NTc2YWYxMTdlMzQ0ZWEyOTY1OGVhZTdlMjhjMDk4YTRhMmJhM2ZiYmNhNDUwODNjM2Y0NTJkIiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("dogsminer_session", "eyJpdiI6IjJzeGlZdDdpUk5OWWFzSjRIbnNWS1E9PSIsInZhbHVlIjoiNGhVRGpaQVNzWnhtUlpOaVIvUVFqS28wOFRrdGw2dzVuL0xUbkdDb08xaVpZZUFhVFBpb1ZGemVIa3RlTzYzaEhDNENRQVNEK2RMdHhwK2FJbEdsZkdrd1hEU1Q2YktDS09IL1lDMVdCTHpDRkxDaTlTUGtlbzlGQ2k2ZUt6U2kiLCJtYWMiOiJjODcxOGIyNTlhOTRiYzU0NGIxYjhhMjljYTZiYTFkMWJlOWU4NGMxNGI2YmUwZmNkZTI0OTVjMGQ1MDdmZDA2IiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://dogs-miner.triplecloudmining.com/get/advertisement/reward" `
+-WebSession $session `
+-Headers @{
+"authority"="dogs-miner.triplecloudmining.com"
+  "method"="GET"
+  "path"="/get/advertisement/reward"
+  "scheme"="https"
+  "accept"="*/*"
+  "accept-encoding"="gzip, deflate, br"
+  "accept-language"="id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
+  "referer"="https://dogs-miner.triplecloudmining.com/"
+  "sec-ch-ua"="`"Not-A.Brand`";v=`"99`", `"Chromium`";v=`"124`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Linux`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-origin"
+  "x-csrf-token"="KWGgmul5IGRWkZ3xqWkzDdVTr0agyfs4uVyVTEZw"
+  "x-requested-with"="XMLHttpRequest"
+} `
+-ContentType "application/json"
