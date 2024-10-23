@@ -1,27 +1,23 @@
 $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$session.UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.483993276.1729602017", "/", ".triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("_ga_KEHG47V40V", "GS1.1.1729673510.5.1.1729673584.0.0.0", "/", ".triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("XSRF-TOKEN", "eyJpdiI6IkE3djdXSDVOK2pOWkpkR1phQUk1QkE9PSIsInZhbHVlIjoiTGdEWFdXUXc0U2VFM3dOL2hraGJBbWk0RUFYUFNoWTRROUhaTElqWTRyMlJsQWtHaTViVmFNUmZFNXpnZUJRZEN0bWJ3SFh6UVVrS1k0dktpSTVWUm13TGE0NTZTdXprWEpSMzNJczZWU2JXdUlKaCtjWDE5U2dDSi82MHU1QVkiLCJtYWMiOiI2ODM5Yjk0NDBlYTkzZDk4OWUyNjJlOTRkNDE2N2U3YWEwNDMyZjJlNTk2ZThjODQwOTBmNGIyYWFiMWNmMWY0IiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("dogsminer_session", "eyJpdiI6IjZZZkcyNll4T3BBYVNNUDhoTlZyelE9PSIsInZhbHVlIjoiWnphQnNlNEo0MzFKbDZUZk1XME1DMnQ2aHRPK3dkZkhPb1lvVzhxNmowejdWYmtGOVlTZ2V0aXJVTTI4ZDlvTEgvZ2lMQnRCODJGaTl4Y1ZEWGQzdEQ2MGM2QS9NUHlTWVRrS2FTcVc1K1RVKzNWdzJsN3JmaFlkODlYZCsraDkiLCJtYWMiOiJlNWRhNWFmYWQyZTk3ZmZjYzExZmVkMTM5ZWI1NGQ3ZDkzMzdhZWZkNTYxMTc3MzkwZWE0NmM5NjNiMDNjODhkIiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
-Invoke-WebRequest -UseBasicParsing -Uri "https://dogs-miner.triplecloudmining.com/get/advertisement/reward" `
+$session.UserAgent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://api2.hcaptcha.com/checksiteconfig?v=8352e07&host=tapless.io&sitekey=d56a817a-64f0-4a36-9906-a8c0b47cc87c&sc=1&swa=1&spst=1" `
+-Method "POST" `
 -WebSession $session `
 -Headers @{
-"authority"="dogs-miner.triplecloudmining.com"
-  "method"="GET"
-  "path"="/get/advertisement/reward"
+"authority"="api2.hcaptcha.com"
+  "method"="POST"
+  "path"="/checksiteconfig?v=8352e07&host=tapless.io&sitekey=d56a817a-64f0-4a36-9906-a8c0b47cc87c&sc=1&swa=1&spst=1"
   "scheme"="https"
-  "accept"="*/*"
+  "accept"="application/json"
   "accept-encoding"="gzip, deflate, br"
   "accept-language"="id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
-  "referer"="https://dogs-miner.triplecloudmining.com/"
+  "origin"="https://newassets.hcaptcha.com"
+  "referer"="https://newassets.hcaptcha.com/"
   "sec-ch-ua"="`"Not-A.Brand`";v=`"99`", `"Chromium`";v=`"124`""
   "sec-ch-ua-mobile"="?0"
-  "sec-ch-ua-platform"="`"Linux`""
+  "sec-ch-ua-platform"="`"Android`""
   "sec-fetch-dest"="empty"
   "sec-fetch-mode"="cors"
-  "sec-fetch-site"="same-origin"
-  "x-csrf-token"="jJHNkCLzdXrJEhjjfXjpZKUM2SRhr0j3YsSiwSt3"
-  "x-requested-with"="XMLHttpRequest"
+  "sec-fetch-site"="same-site"
 } `
--ContentType "application/json"
+-ContentType "text/plain"
