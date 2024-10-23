@@ -1,9 +1,9 @@
 $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 $session.UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 $session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.483993276.1729602017", "/", ".triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("_ga_KEHG47V40V", "GS1.1.1729602016.1.1.1729602068.0.0.0", "/", ".triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("XSRF-TOKEN", "eyJpdiI6IkU4Uy81SjlscVAya2lRQXFvV04zcnc9PSIsInZhbHVlIjoiNDU5T09WaHUwWnVqNmtUUUF4NWE3aitPejMxOHUxL01EaFBiN05GaGtWRnNVb25QaXMzOXJ0UWZSVmRjZEpMeWY0UFVwZFZJS1didlRYVWp2cWVySXMydHM0a25ZYVhXL3d3ankvbnAyelV3NTE3MmxEdUZ2YkozV3FzRDVMOHgiLCJtYWMiOiJlOGUyYjcwNWY5NTc2YWYxMTdlMzQ0ZWEyOTY1OGVhZTdlMjhjMDk4YTRhMmJhM2ZiYmNhNDUwODNjM2Y0NTJkIiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
-$session.Cookies.Add((New-Object System.Net.Cookie("dogsminer_session", "eyJpdiI6IjJzeGlZdDdpUk5OWWFzSjRIbnNWS1E9PSIsInZhbHVlIjoiNGhVRGpaQVNzWnhtUlpOaVIvUVFqS28wOFRrdGw2dzVuL0xUbkdDb08xaVpZZUFhVFBpb1ZGemVIa3RlTzYzaEhDNENRQVNEK2RMdHhwK2FJbEdsZkdrd1hEU1Q2YktDS09IL1lDMVdCTHpDRkxDaTlTUGtlbzlGQ2k2ZUt6U2kiLCJtYWMiOiJjODcxOGIyNTlhOTRiYzU0NGIxYjhhMjljYTZiYTFkMWJlOWU4NGMxNGI2YmUwZmNkZTI0OTVjMGQ1MDdmZDA2IiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_KEHG47V40V", "GS1.1.1729673510.5.1.1729673584.0.0.0", "/", ".triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("XSRF-TOKEN", "eyJpdiI6IkE3djdXSDVOK2pOWkpkR1phQUk1QkE9PSIsInZhbHVlIjoiTGdEWFdXUXc0U2VFM3dOL2hraGJBbWk0RUFYUFNoWTRROUhaTElqWTRyMlJsQWtHaTViVmFNUmZFNXpnZUJRZEN0bWJ3SFh6UVVrS1k0dktpSTVWUm13TGE0NTZTdXprWEpSMzNJczZWU2JXdUlKaCtjWDE5U2dDSi82MHU1QVkiLCJtYWMiOiI2ODM5Yjk0NDBlYTkzZDk4OWUyNjJlOTRkNDE2N2U3YWEwNDMyZjJlNTk2ZThjODQwOTBmNGIyYWFiMWNmMWY0IiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("dogsminer_session", "eyJpdiI6IjZZZkcyNll4T3BBYVNNUDhoTlZyelE9PSIsInZhbHVlIjoiWnphQnNlNEo0MzFKbDZUZk1XME1DMnQ2aHRPK3dkZkhPb1lvVzhxNmowejdWYmtGOVlTZ2V0aXJVTTI4ZDlvTEgvZ2lMQnRCODJGaTl4Y1ZEWGQzdEQ2MGM2QS9NUHlTWVRrS2FTcVc1K1RVKzNWdzJsN3JmaFlkODlYZCsraDkiLCJtYWMiOiJlNWRhNWFmYWQyZTk3ZmZjYzExZmVkMTM5ZWI1NGQ3ZDkzMzdhZWZkNTYxMTc3MzkwZWE0NmM5NjNiMDNjODhkIiwidGFnIjoiIn0%3D", "/", "dogs-miner.triplecloudmining.com")))
 Invoke-WebRequest -UseBasicParsing -Uri "https://dogs-miner.triplecloudmining.com/get/advertisement/reward" `
 -WebSession $session `
 -Headers @{
@@ -21,7 +21,7 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://dogs-miner.triplecloudmining.co
   "sec-fetch-dest"="empty"
   "sec-fetch-mode"="cors"
   "sec-fetch-site"="same-origin"
-  "x-csrf-token"="KWGgmul5IGRWkZ3xqWkzDdVTr0agyfs4uVyVTEZw"
+  "x-csrf-token"="jJHNkCLzdXrJEhjjfXjpZKUM2SRhr0j3YsSiwSt3"
   "x-requested-with"="XMLHttpRequest"
 } `
 -ContentType "application/json"
